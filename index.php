@@ -8,7 +8,7 @@ $login = new Facebook();
 $login->caminho = "cookies.txt";
 
 //realiza o login
-$login->entrar($email, $senha, false);
+$login->entrar($email, $senha);
 
 //abre uma pagina do facebook
 echo $login->abrirPagina("https://www.facebook.com");
