@@ -12,3 +12,4 @@ $login->entrar($email, $senha, false);
 
 //abre uma pagina do facebook
 echo $login->abrirPagina("https://www.facebook.com");
+
