@@ -4,13 +4,6 @@ class Facebook{
 	public $url = "https://m.facebook.com/login.php";
 	public $navegador = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36";
 	
-	function estouLogado(){
-		if (file_exists($caminho)){
-			return true;
-		}else{
-			return false;
-		}	
-	}
 	function entrar($email, $senha){
 		$ch = curl_init($this->url);
 		curl_setopt($ch, CURLOPT_POSTFIELDS,'email='.urlencode($email).'&pass='.urlencode($senha).'&login=Login');
